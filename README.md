@@ -1,8 +1,8 @@
 User Management System (C# MVC)
+**Day 25 of self-study: my first full MVC project.**
 
 A basic console application that allows you to manage users (CRUD) with clear MVC structure.
 這是一個 C# MVC 架構的簡易使用者管理系統，使用 List 物件模擬資料儲存，提供以下功能：
-**Day 25 of self-study: my first full MVC project.**
 
 ##  Features
 
