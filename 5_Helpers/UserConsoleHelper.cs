@@ -70,24 +70,24 @@ public static class ConsoleHelper
     }
     public static User CheckMailExist(string prompt, UserRepository repo)
     {
-        while (true) // 一直循環
+        while (true) 
         {
             Console.WriteLine(prompt);
             var input = Console.ReadLine();
 
             if (input.ToUpper() == "Q")
             {
-                return null; // 按Q離開
+                return null; 
             }
             var user = repo.FindByMail(input);
             if (user != null)
             {
-                return user; // 找到直接回傳
+                return user; 
             }
             else
             {
                 Console.WriteLine("❌ 查無此mail，請重新輸入，或按Q鍵返回主選單。");
-                // 什麼都不用做，繼續回到while最上面，讓使用者重新輸入
+                
             }
         }
     }
