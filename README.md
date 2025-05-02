@@ -35,6 +35,7 @@ A basic console application that allows you to manage users (CRUD) with clear MV
 - [ ] Refactor to use Dictionary for faster lookups（改寫Dictionary儲存加快查找速度）
 
 ---
+
  操作範例（Usage Example）
 ============使用者管理系統==============
 選單:
