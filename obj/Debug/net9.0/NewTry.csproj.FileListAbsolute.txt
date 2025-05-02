@@ -1,0 +1,6 @@
+/Users/shaoyee/Desktop/NewTry/obj/Debug/net9.0/NewTry.csproj.AssemblyReference.cache
+/Users/shaoyee/Desktop/NewTry/obj/Debug/net9.0/NewTry.GeneratedMSBuildEditorConfig.editorconfig
+/Users/shaoyee/Desktop/NewTry/obj/Debug/net9.0/NewTry.AssemblyInfoInputs.cache
+/Users/shaoyee/Desktop/NewTry/obj/Debug/net9.0/NewTry.AssemblyInfo.cs
+/Users/shaoyee/Desktop/NewTry/obj/Debug/net9.0/NewTry.csproj.CoreCompileInputs.cache
+/Users/shaoyee/Desktop/NewTry/obj/Debug/net9.0/NewTry.sourcelink.json
