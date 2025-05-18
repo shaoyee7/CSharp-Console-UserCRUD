@@ -1,4 +1,5 @@
 using System;
+using Role.Models;
 
 //新增 RegisterController 新增控制器（串接RegisterService 新增使用者資料、驗證輸入）
 public class RegisterController
@@ -21,6 +22,8 @@ public class RegisterController
         user.Grade=ConsoleHelper.CheckNumber("請輸入年級");
 
         user.Mail=ConsoleHelper.CheckMail("請輸入信箱");
+
+        user.Password=ConsoleHelper.CheckMessage("請輸入密碼");
 
         service.CreateUser(user);
     }

@@ -1,5 +1,7 @@
 using System;
+using Role.Models;
 using System.Collections.Generic;
+
 
 //新增 UpdateController 更新控制器（驗證輸入，串接 UpDateService 修改使用者資料）
 public class UpdateController

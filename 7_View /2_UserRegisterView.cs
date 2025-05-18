@@ -1,4 +1,5 @@
 using System;
+using Role.Models;
 
 //新增使用者畫面層
 public static class RegisterView

@@ -1,5 +1,5 @@
 using System;
-
+using Role.Models;
 
 //新增DeleteController刪除控制器（驗證輸入，串接 DeleteService 刪除使用者資料）
 public class DeleteController

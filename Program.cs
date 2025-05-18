@@ -1,4 +1,7 @@
 ﻿using System;
+using Role.Models;
+using Menu.Views;
+using MenuView.Controller;
 using System.Collections.Generic;
 
 public class Program
@@ -19,10 +22,31 @@ public class Program
         UpdateController upd = new UpdateController(updateService, repo);
         DeleteController del = new DeleteController(repo, deleteService);
 
-        // 建立主控制器
-        MenuController con = new MenuController(reg, rea, upd, del);
+        LoginService loginService = new LoginService(repo);
+        LoginController loginController = new LoginController(loginService);
 
-        // 啟動選單（傳參數注入）
-        MenuView.Menu(con);
+        IMenuViewController controller=null;
+        IMenuView view=null;
+
+        var loginView = new LoginView(view, controller, reg);
+        var user = loginView.Login(loginController);
+
+        if (user == null)
+        {
+            ConsoleHelper.CheckError("登入失敗，結束程式。");
+            return;
+        }
+
+        if(user.Role == UserRole.Admin)
+        {
+            view = new AdminMenuView();
+            controller = new MenuController(reg, rea, upd, del);
+        }
+        else
+        {
+            view = new GeneralUserMenuView();
+            controller = new GeneralMenuController(reg, upd, del);
+        }
+        view.ShowMenu(controller);
     }
 }

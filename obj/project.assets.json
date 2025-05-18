@@ -92,11 +92,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/shaoyee/Desktop/C#Practice/C#Practice.csproj",
-      "projectName": "C#Practice",
-      "projectPath": "/Users/shaoyee/Desktop/C#Practice/C#Practice.csproj",
+      "projectUniqueName": "/Users/shaoyee/Desktop/C#ConsoleUserCRUD/C#ConsoleUserCRUD.csproj",
+      "projectName": "C#ConsoleUserCRUD",
+      "projectPath": "/Users/shaoyee/Desktop/C#ConsoleUserCRUD/C#ConsoleUserCRUD.csproj",
       "packagesPath": "/Users/shaoyee/.nuget/packages/",
-      "outputPath": "/Users/shaoyee/Desktop/C#Practice/obj/",
+      "outputPath": "/Users/shaoyee/Desktop/C#ConsoleUserCRUD/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/shaoyee/.nuget/NuGet/NuGet.Config"

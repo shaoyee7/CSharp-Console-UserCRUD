@@ -1,4 +1,5 @@
 using System;
+using Role.Models;
 
 public static class ConsoleHelper
 {

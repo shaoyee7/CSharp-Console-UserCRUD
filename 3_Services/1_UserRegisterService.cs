@@ -1,4 +1,5 @@
 using System;
+using Role.Models;
 using System.Collections.Generic;
 
 //串接UserRepository新增使用者 （處理層)

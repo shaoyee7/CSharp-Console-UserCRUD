@@ -4,18 +4,16 @@ using MenuView.Controller;
 
 namespace MenuView.Controller
 {
-    public class MenuController:IMenuViewController
+    public class GeneralMenuController:IMenuViewController
     {   
         private RegisterController register;
-        private ReadController read;
         private UpdateController update;
         private DeleteController delete;
     
 
-        public MenuController(RegisterController register,ReadController read,UpdateController update,DeleteController delete)
+        public GeneralMenuController(RegisterController register,UpdateController update,DeleteController delete)
         {
             this.register=register;
-            this.read=read;
             this.update=update;
             this.delete=delete;
         }
@@ -28,14 +26,10 @@ namespace MenuView.Controller
                 break;
 
                 case "2":
-                ReadView.ShowReadUserTitle(read);
-                break;
-
-                case "3":
                 UpdateView.ShowUpdateUserTitle(update);
                 break;
 
-                case "4":
+                case "3":
                 DeleteView.ShowDeleteUserTitle(delete);
                 break;
 

@@ -1,4 +1,5 @@
 using System;
+using Role.Models; 
 using System.Collections.Generic;
 
 //串接UserRepository 得到使用者資料 （處理層)

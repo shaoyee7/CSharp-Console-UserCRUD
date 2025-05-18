@@ -5,15 +5,15 @@ using MenuView.Controller;
 
 namespace Menu.Views
 {
-    public class AdminMenuView:IMenuView
+    public class GeneralUserMenuView:IMenuView
     {
         public void ShowMenu(IMenuViewController iMenuViewController)
         {
             while(true)
             {
                 ConsoleHelper.ClearScreen();
-                Console.WriteLine("=============管理員系統===============");
-                Console.WriteLine("選單:\n按1=新增使用者\n按2=目前使用者列表\n按3=修改使用者\n按4=刪除使用者");
+                Console.WriteLine("=============一般會員系統===============");
+                Console.WriteLine($"選單:\n按1=新增帳號\n按2=修改基本資料\n按3=刪除帳號");
                 Console.WriteLine("=========================================");
                 Console.WriteLine("請選擇功能");
                 var choice=Console.ReadLine();

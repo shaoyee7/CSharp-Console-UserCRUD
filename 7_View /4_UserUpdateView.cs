@@ -1,4 +1,5 @@
 using System;
+using Role.Models;
 
 //修改使用者畫面層
 public class UpdateView
